@@ -21,7 +21,7 @@ struct ThreeScreenView: View {
                 .font(.headline)
                 .padding()
             
-            VStack {
+            VStack(spacing: -10) {
                 
                 CustomTextField(iconName: "person.fill", placeholder: "Full Name")
                 CustomTextField(iconName: "envelope.fill", placeholder: "user@mail.com")

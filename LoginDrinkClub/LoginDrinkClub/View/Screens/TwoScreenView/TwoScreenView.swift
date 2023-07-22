@@ -21,23 +21,25 @@ struct TwoScreenView: View {
             
             LogoView()
                 .foregroundColor(Color("WineWhite"))
-               
+                .padding()
          
-        
-            Text("Welcome Back")
-                .font(.system(.title, design: .rounded, weight: .semibold))
-                .foregroundColor(Color("Wine"))
-            
-            Text("login to you account")
-                .font(.callout)
-                .foregroundColor(Color("Chalk"))
-            
             VStack{
+                Text("Welcome Back")
+                    .font(.system(.title, design: .rounded, weight: .semibold))
+                    .foregroundColor(Color("Wine"))
+                  
+                
+                Text("login to you account")
+                    .font(.callout)
+                    .foregroundColor(Color("Chalk"))
+            }
+         
+            VStack(spacing: -10){
                 
                 CustomTextField(iconName: "person.fill", placeholder: "Name")
                 CustomTextField(iconName: "lock.fill", placeholder: "Password", isSecure: true)
                     
-                    HStack{
+                HStack {
                         
                         Text("Remember Me ")
                             .foregroundColor(.secondary)
@@ -48,8 +50,8 @@ struct TwoScreenView: View {
                             .foregroundColor(Color("Wine"))
                     }
                     .font(.caption)
+                   
                 }
-   
              .padding(30)
              
             Text("login")
