@@ -65,7 +65,6 @@ struct ThreeScreenView: View {
                     Text("Sign up.")
                         .foregroundColor(Color("Wine"))
                         .font(.system(.caption2, design: .rounded, weight: .bold))
-                        
                 }
                 .padding()
             }

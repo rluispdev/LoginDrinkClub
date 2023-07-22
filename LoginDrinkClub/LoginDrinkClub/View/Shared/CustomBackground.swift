@@ -35,6 +35,7 @@ extension View {
             .background(RoundedRectangle(cornerRadius: 30).fill(backgroundColor2)
                 .frame(width: 350, height: 50, alignment: .center))
             .foregroundColor(textColor2)
+            .shadow(radius: 4)
         
     }
 }
