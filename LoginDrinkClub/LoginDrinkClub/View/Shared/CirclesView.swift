@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CirclesView: View {
     var body: some View {
+        
         VStack {
             Circle()
                 .fill(LinearGradient(colors: [.white, Color("Gray1")], startPoint: .bottom, endPoint: .topTrailing))
@@ -18,7 +19,7 @@ struct CirclesView: View {
                 )
         }
         .frame(width: 50)
-        .shadow(radius: 4)
+        .shadow(color: Color("ColorShare"), radius: 2, x: 0, y: 2)
     
     }
 }
@@ -28,7 +29,7 @@ extension View {
         Image(imageName)
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 15, height: 15)
+            .frame(width: 20, height: 20)
     }
 }
 

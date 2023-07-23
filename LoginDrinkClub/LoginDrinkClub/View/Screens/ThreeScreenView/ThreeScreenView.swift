@@ -38,13 +38,13 @@ struct ThreeScreenView: View {
                 HStack {
                     
                     Text("Remember Me")
-                        .foregroundColor(.secondary)
+                        .foregroundColor(Color("RememberMeColor"))
                     
                     Spacer()
                     
                     Text ("Forget Passoword?")
                         .bold()
-                        .foregroundColor(Color("Wine"))
+                        .foregroundColor(Color("ColorDark"))
                 }
                 .font(.caption)
             }
@@ -63,7 +63,7 @@ struct ThreeScreenView: View {
                         .font(.caption)
                     
                     Text("Sign up.")
-                        .foregroundColor(Color("Wine"))
+                        .foregroundColor(Color("ColorDark"))
                         .font(.system(.caption2, design: .rounded, weight: .bold))
                 }
                 .padding()

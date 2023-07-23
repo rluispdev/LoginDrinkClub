@@ -42,7 +42,7 @@ struct TwoScreenView: View {
                 HStack {
                         
                         Text("Remember Me ")
-                            .foregroundColor(.secondary)
+                        .foregroundColor(Color("RememberMeColor"))
                         Spacer()
                         
                      Text("Forget PassWord?")

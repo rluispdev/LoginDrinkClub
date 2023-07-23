@@ -12,7 +12,7 @@ let fontsize: CGFloat = 16
 let fontsize2: CGFloat = 25
 let backgroundColor = Color("Gray1")
 let backgroundColor2 = Color("Wine")
-let textColor = Color("WineWhite")
+let textColor = Color("WineBlack")
 let textColor2 = Color.white
 
 extension View {
@@ -35,7 +35,7 @@ extension View {
             .background(RoundedRectangle(cornerRadius: 30).fill(backgroundColor2)
                 .frame(width: 350, height: 50, alignment: .center))
             .foregroundColor(textColor2)
-            .shadow(radius: 4)
+            .shadow(radius: 2, x: 0, y: 2)
         
     }
 }
