@@ -28,7 +28,6 @@ struct ThreeScreenView: View {
                 CustomTextField(iconName: "lock.fill", placeholder: "password", isSecure: true)
                 
             }
-            
             Spacer()
             
             VStack {
@@ -37,8 +36,7 @@ struct ThreeScreenView: View {
                 
                 HStack {
                     
-                    Text("Remember Me")
-                        .foregroundColor(Color("RememberMeColor"))
+                RememberMeView()
                     
                     Spacer()
                     
@@ -47,9 +45,9 @@ struct ThreeScreenView: View {
                         .foregroundColor(Color("ColorDark"))
                 }
                 .font(.caption)
+                .padding(.horizontal, 30)
             }
-            .padding(.horizontal, 30)
-            
+           
             Spacer()
             
             ShareView()

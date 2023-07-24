@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TwoScreenView: View {
+
+    
     var body: some View {
         
         VStack (spacing: 20) {
@@ -34,15 +36,13 @@ struct TwoScreenView: View {
                     .foregroundColor(Color("Chalk"))
             }
          
-            VStack(spacing: -10){
+            VStack {
                 
                 CustomTextField(iconName: "person.fill", placeholder: "Name")
                 CustomTextField(iconName: "lock.fill", placeholder: "Password", isSecure: true)
                     
                 HStack {
-                        
-                        Text("Remember Me ")
-                        .foregroundColor(Color("RememberMeColor"))
+                  RememberMeView()
                         Spacer()
                         
                      Text("Forget PassWord?")
@@ -50,12 +50,17 @@ struct TwoScreenView: View {
                             .foregroundColor(Color("Wine"))
                     }
                     .font(.caption)
+                    .padding(.horizontal, 30 )
                    
                 }
-             .padding(30)
-             
-            Text("login")
-                .CustomBackground2()
+           
+              
+            VStack {
+                Text("login")
+                    .CustomBackground2()
+            }
+            .padding(.vertical, 30)
+     
             
             HStack {
                 Text ("Don't have account?")
@@ -66,6 +71,7 @@ struct TwoScreenView: View {
             }
             
         }
+  
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                 .ignoresSafeArea()
     }
