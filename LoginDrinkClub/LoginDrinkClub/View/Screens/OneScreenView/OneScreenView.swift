@@ -75,9 +75,7 @@ struct OneScreenView: View {
             }
             .foregroundColor(.white)
         }
-       
     }
-    
 }
 
 struct OneScreenView_Previews: PreviewProvider {

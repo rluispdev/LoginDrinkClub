@@ -25,7 +25,7 @@ struct RememberMeView: View {
          Text("Forget PassWord?")
                 .bold()
                 
-                .foregroundColor(isSelected ? Color("MaroonBlack") : Color("WineCoral"))
+                .foregroundColor(Color("WineCoral"))
         }
         .font(.callout)
         .padding(.horizontal, 30 )

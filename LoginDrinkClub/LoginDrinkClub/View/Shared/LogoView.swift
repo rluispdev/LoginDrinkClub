@@ -10,7 +10,6 @@ import SwiftUI
 struct LogoView: View {
     var body: some View {
         
-        
         HStack {
             Text("Drink")
                 .font(.custom("IslandMoments-Regular", size: 40))
@@ -19,6 +18,7 @@ struct LogoView: View {
                 .font(.title)
                 .bold()
         }
+        .foregroundColor(Color("WineGreen"))
     }
 }
 

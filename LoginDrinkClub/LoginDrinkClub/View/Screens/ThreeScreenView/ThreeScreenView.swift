@@ -44,8 +44,9 @@ struct ThreeScreenView: View {
             ShareView()
           
             VStack(spacing: -10) {
+                
                 LogoView()
-                    .foregroundColor(Color("WineGreen"))
+                    
                 HStack {
                     Text("Already have a account")
                         .foregroundColor(Color("GreenWhite"))
@@ -59,7 +60,6 @@ struct ThreeScreenView: View {
             }
             
         }
-        
     }
 }
 
