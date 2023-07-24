@@ -16,7 +16,7 @@ struct ShareView: View {
                 CustomDividerView()
                 
                 Text("or conitinue with")
-                    .foregroundColor(Color("Chalk"))
+                    .foregroundColor(Color("GreenWhite"))
                     .layoutPriority(1)
                 
                 CustomDividerView()

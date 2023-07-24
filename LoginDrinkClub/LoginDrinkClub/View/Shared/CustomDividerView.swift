@@ -13,7 +13,7 @@ struct CustomDividerView: View {
         VStack{
             
             Rectangle()
-                .foregroundColor(Color("Chalk"))
+                .foregroundColor(Color("GreenWhite"))
                 .frame( height:  1)
                 .padding()
         }

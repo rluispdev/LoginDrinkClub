@@ -17,7 +17,7 @@ struct ThreeScreenView: View {
                 .foregroundColor(Color("Wine"))
             
             Text("Creat your new account")
-                .foregroundColor(Color("Chalk"))
+                .foregroundColor(Color("GreenWhite"))
                 .font(.headline)
                 .padding()
             
@@ -26,7 +26,6 @@ struct ThreeScreenView: View {
                 CustomTextField(iconName: "person.fill", placeholder: "Full Name")
                 CustomTextField(iconName: "envelope.fill", placeholder: "user@mail.com")
                 CustomTextField(iconName: "lock.fill", placeholder: "password", isSecure: true)
-                
             }
             Spacer()
             
@@ -36,32 +35,24 @@ struct ThreeScreenView: View {
                 
                 HStack {
                     
-                RememberMeView()
-                    
-                    Spacer()
-                    
-                    Text ("Forget Passoword?")
-                        .bold()
-                        .foregroundColor(Color("ColorDark"))
+                    RememberMeView()
                 }
-                .font(.caption)
-                .padding(.horizontal, 30)
             }
-           
+            
             Spacer()
             
             ShareView()
           
             VStack(spacing: -10) {
                 LogoView()
-                    .foregroundColor(Color("WineWhite"))
+                    .foregroundColor(Color("WineGreen"))
                 HStack {
                     Text("Already have a account")
-                        .foregroundColor(Color("Chalk"))
+                        .foregroundColor(Color("GreenWhite"))
                         .font(.caption)
                     
                     Text("Sign up.")
-                        .foregroundColor(Color("ColorDark"))
+                        .foregroundColor(Color("WineCoral"))
                         .font(.system(.caption2, design: .rounded, weight: .bold))
                 }
                 .padding()

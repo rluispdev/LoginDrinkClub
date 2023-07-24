@@ -12,14 +12,14 @@ struct CirclesView: View {
         
         VStack {
             Circle()
-                .fill(LinearGradient(colors: [.white, Color("Gray1")], startPoint: .bottom, endPoint: .topTrailing))
+                .fill(LinearGradient(colors: [.white, Color("WhiteGreen")], startPoint: .bottom, endPoint: .topTrailing))
                 .overlay(
                     Circle()
                         .stroke(Color.gray, lineWidth: 0.1)
                 )
         }
         .frame(width: 50)
-        .shadow(color: Color("ColorShare"), radius: 2, x: 0, y: 2)
+        .shadow(color: Color("MaroonBlack"), radius: 2, x: 0, y: 2)
     
     }
 }

@@ -17,11 +17,21 @@ struct RememberMeView: View {
                 .onTapGesture {
                     isSelected.toggle()
                 }
+            
             Text("Remember Me ")
-                .foregroundColor(Color("RememberMeColor"))
+            
+            Spacer()
+            
+         Text("Forget PassWord?")
+                .bold()
+                
+                .foregroundColor(isSelected ? Color("MaroonBlack") : Color("WineCoral"))
+        }
+        .font(.callout)
+        .padding(.horizontal, 30 )
+          
         }
     }
-}
 
 struct RememberMeView_Previews: PreviewProvider {
     static var previews: some View {

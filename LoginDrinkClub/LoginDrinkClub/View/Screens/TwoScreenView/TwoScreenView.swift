@@ -8,72 +8,61 @@
 import SwiftUI
 
 struct TwoScreenView: View {
-
+    
     
     var body: some View {
         
         VStack (spacing: 20) {
-           
-                Image("drink2")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(height: 185)
-                    .waveShaped()
-                    .shadow(radius: 5)
+            
+            Image("drink2")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 185)
+                .waveShaped()
+                .shadow(radius: 5)
             
             LogoView()
-                .foregroundColor(Color("WineWhite"))
+                .foregroundColor(Color("WineGreen"))
                 .padding()
-         
+            
             VStack{
                 Text("Welcome Back")
                     .font(.system(.title, design: .rounded, weight: .semibold))
                     .foregroundColor(Color("Wine"))
-                  
+                
                 
                 Text("login to you account")
                     .font(.callout)
-                    .foregroundColor(Color("Chalk"))
+                    .foregroundColor(Color("GreenWhite"))
             }
-         
+            
             VStack {
                 
                 CustomTextField(iconName: "person.fill", placeholder: "Name")
                 CustomTextField(iconName: "lock.fill", placeholder: "Password", isSecure: true)
-                    
+                
                 HStack {
-                  RememberMeView()
-                        Spacer()
-                        
-                     Text("Forget PassWord?")
-                            .bold()
-                            .foregroundColor(Color("Wine"))
-                    }
-                    .font(.caption)
-                    .padding(.horizontal, 30 )
-                   
+                    RememberMeView()
                 }
-           
-              
+            }
+            
             VStack {
                 Text("login")
                     .CustomBackground2()
             }
             .padding(.vertical, 30)
-     
+            
             
             HStack {
                 Text ("Don't have account?")
-                    .foregroundColor(Color("Chalk"))
+                    .foregroundColor(Color("GreenWhite"))
                 Text("Sign up.")
                     .font(.system(.headline, design: .rounded, weight: .semibold))
                     .foregroundColor(Color("Wine"))
             }
-            
         }
-  
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-                .ignoresSafeArea()
+        .ignoresSafeArea()
     }
 }
 

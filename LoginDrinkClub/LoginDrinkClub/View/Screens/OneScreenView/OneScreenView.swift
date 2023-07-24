@@ -16,7 +16,7 @@ struct OneScreenView: View {
         
         ZStack {
             
-                RadialGradient(gradient: Gradient(colors: [Color("Wine"), Color("Chalk")]),
+                RadialGradient(gradient: Gradient(colors: [Color("Wine"), Color("GreenWhite")]),
                                center: .bottom,
                                startRadius: 0,
                                endRadius: 1000)
@@ -52,7 +52,7 @@ struct OneScreenView: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .accentColor(Color("Wine"))
-                    .shadow(color: Color("Gray1"), radius: 1)
+                    .shadow(color: Color("WhiteGreen"), radius: 1)
                  
               
                 }

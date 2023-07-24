@@ -10,9 +10,9 @@ import SwiftUI
 
 let fontsize: CGFloat = 16
 let fontsize2: CGFloat = 25
-let backgroundColor = Color("Gray1")
+let backgroundColor = Color("WhiteGreen")
 let backgroundColor2 = Color("Wine")
-let textColor = Color("WineBlack")
+let textColor = Color("MaroonBlack")
 let textColor2 = Color.white
 
 extension View {
