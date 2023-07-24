@@ -9,6 +9,10 @@ import SwiftUI
 
 struct TwoScreenView: View {
     
+    @Binding var text: String
+    @State private var name: String = ""
+    @State private var password: String = ""
+    
     
     var body: some View {
         
@@ -38,8 +42,8 @@ struct TwoScreenView: View {
             
             VStack {
                 
-                CustomTextField(iconName: "person.fill", placeholder: "Name")
-                CustomTextField(iconName: "lock.fill", placeholder: "Password", isSecure: true)
+                CustomTextField(text: $name, iconName: "person.fill", placeholder: "Name")
+                CustomTextField(text: $password, iconName: "lock.fill", placeholder: "Password", isSecure: true)
                 
                 HStack {
                     RememberMeView()
@@ -47,10 +51,12 @@ struct TwoScreenView: View {
             }
             
             VStack {
-                Text("login")
-                    .CustomBackground2()
+                
+                    Text("login")
+                
             }
-            .padding(.vertical, 30)
+            .CustomBackground2()
+            .padding()
             
             
             HStack {
@@ -67,7 +73,10 @@ struct TwoScreenView: View {
 }
 
 struct TwoScreenView_Previews: PreviewProvider {
+    @State static var text: String = ""  // Declaração da variável text
+    @State static var password: String = ""
+    
     static var previews: some View {
-        TwoScreenView()
+        TwoScreenView(text: $text)
     }
 }

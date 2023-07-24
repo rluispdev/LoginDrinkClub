@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ThreeScreenView: View {
+    @Binding var text : String
+    
+    @State private var name: String = ""
+    @State private var email: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
         
         VStack {
@@ -23,9 +29,10 @@ struct ThreeScreenView: View {
             
             VStack(spacing: -10) {
                 
-                CustomTextField(iconName: "person.fill", placeholder: "Full Name")
-                CustomTextField(iconName: "envelope.fill", placeholder: "user@mail.com")
-                CustomTextField(iconName: "lock.fill", placeholder: "password", isSecure: true)
+                CustomTextField(text: $name, iconName: "person.fill", placeholder: "Name")
+                CustomTextField(text: $email, iconName: "envelope.fill", placeholder: "Email")
+                CustomTextField(text: $password, iconName: "lock.fill", placeholder: "Password", isSecure: true)
+               
             }
             Spacer()
             
@@ -64,7 +71,8 @@ struct ThreeScreenView: View {
 }
 
 struct ThreeScreenView_Previews: PreviewProvider {
+    @State static var text: String = ""  // Declaração da variável text
     static var previews: some View {
-        ThreeScreenView()
+    ThreeScreenView(text: $text)
     }
 }

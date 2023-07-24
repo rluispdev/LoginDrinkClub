@@ -10,9 +10,7 @@ import SwiftUI
 
 struct CustomTextField: View {
     
-    @State var name: String = ""
-    @State var email: String = ""
-    @State var password: String = ""
+    @Binding var text: String
     
     var iconName: String
     var placeholder: String
@@ -23,12 +21,12 @@ struct CustomTextField: View {
         HStack {
             
             Image(systemName: iconName)
-            if isSecure {
-                SecureField("Password", text: $password)
             
-            } else {
-                TextField("Name", text: $name)
-            }
+            if isSecure {
+                           SecureField(placeholder, text: $text)
+                       } else {
+                           TextField(placeholder, text: $text)
+                       }
             Spacer()
         }
         .CustomBackground()
@@ -36,9 +34,11 @@ struct CustomTextField: View {
     }
 }
 
-struct  CustomTextField_PreviewProvider: PreviewProvider {
+struct  CustomTextField_Previews: PreviewProvider {
+    @State static var text: String = ""
+    
     static var previews: some View {
-        CustomTextField(iconName: "person", placeholder: "")
+        CustomTextField(text: $text, iconName: "person", placeholder: "Name")
     }
     
 }
