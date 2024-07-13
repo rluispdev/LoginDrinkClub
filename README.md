@@ -1,4 +1,4 @@
-![Template rluipdev](Template/rluispdev(1).png)
+![Template rluipdev](template/rluispdev.png)
 # 🚀 LoginDrinkClub
 
 Projeto pessoal, cruiando uma tela usando SwiftUI.
